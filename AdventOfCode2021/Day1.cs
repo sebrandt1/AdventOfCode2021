@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021
 {
-    public class Measure
+    public class Day1
     {
         public static int GetAmountOfIncreases(int[] items)
         {

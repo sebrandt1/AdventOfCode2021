@@ -15,23 +15,10 @@ namespace AdventOfCode2021
             var data1 = File.ReadAllLines(
                 Environment.GetFolderPath(Environment.SpecialFolder.Desktop) +
                 "\\items.txt"
-                ).Select(x =>
-                    int.Parse(x))
-                .ToArray();
+                ).ToArray();
 
-            var result1 = Measure.GetAmountOfIncreases(data1);
+            var result1 = Day3.GetPowerConsumption(data1);
             Console.WriteLine(result1);
-
-            //Part2
-            var data2 = File.ReadAllLines(
-                Environment.GetFolderPath(Environment.SpecialFolder.Desktop) +
-                "\\items.txt"
-                ).Select(x =>
-                    int.Parse(x))
-                .ToArray();
-
-            var result2 = Measure.GetAmountOfThirdIncrementIncrease(data2);
-            Console.WriteLine(result2);
 
             Console.ReadKey();
         }

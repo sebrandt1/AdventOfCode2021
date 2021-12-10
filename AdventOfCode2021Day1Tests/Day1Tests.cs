@@ -4,10 +4,10 @@ using Xunit;
 
 namespace AdventOfCode2021Day1Tests
 {
-    public class MeasureTests
+    public class Day1Tests
     {
         [Fact]
-        public void GetAmountOfIncreases_ShouldReturnAmountOfIncreases_WhenNonEmptyArrayIsInputted()
+        public void GetAmountOfIncreases_Part1()
         {
             var data = new int[]
             {
@@ -21,13 +21,13 @@ namespace AdventOfCode2021Day1Tests
                 200
             };
 
-            var result = Measure.GetAmountOfIncreases(data);
+            var result = Day1.GetAmountOfIncreases(data);
 
             Assert.Equal(4, result);
         }
 
         [Fact]
-        public void GetThreeMeasurementIncrease_ShouldReturnAmountOfIncreasesInEveryThirdIncrement_WhenArrayInputIsNotZero()
+        public void GetThreeMeasurementIncrease_Part2()
         {
             var data = new int[]
             {
@@ -43,7 +43,7 @@ namespace AdventOfCode2021Day1Tests
                 263
             };
 
-            var result = Measure.GetAmountOfThirdIncrementIncrease(data);
+            var result = Day1.GetAmountOfThirdIncrementIncrease(data);
 
             Assert.Equal(5, result);
         }
